@@ -1,4 +1,4 @@
-package LoginData;
+package AllData;
 
 import java.lang.reflect.Method;
 

@@ -16,6 +16,9 @@ public class GeneralPage extends generalActions{
 	private final By signInLink = By.xpath("//div[@class='header_user_info']/a[@class='login']");
 	private final By signOutLink = By.xpath("//a[@class='logout']");
 	private final By contactLink = By.xpath("//div[@id='contact-link']");
+	private final By catTitleWomen = By.xpath("//a[@title='Women']");
+	private final By catTitleDresses = By.xpath("//a[@title='Dresses']");
+	private final By catTitleTShirts = By.xpath("//li[3]/a[@title='T-shirts']");
 	
 	// ELEMENTS
 	public WebElement getTxtSearchBox() {
@@ -50,6 +53,18 @@ public class GeneralPage extends generalActions{
 		return Constant.WEBDRIVER.findElement(contactLink);
 	}
 	
+	public WebElement getCatTitleWomen() {
+		return Constant.WEBDRIVER.findElement(catTitleWomen);
+	}
+	
+	public WebElement getCatTitleDresses() {
+		return Constant.WEBDRIVER.findElement(catTitleDresses);
+	}
+	
+	public WebElement getCatTitleTShirts() {
+		return Constant.WEBDRIVER.findElement(catTitleTShirts);
+	}
+	
 	// METHODS
 	public SearchPage searchValue(String value) {
 		this.getTxtSearchBox().sendKeys(value);
@@ -70,5 +85,16 @@ public class GeneralPage extends generalActions{
 	
 	public void logOut() {
 		this.getSignOutLink().click();
+	}
+	
+	public MyStorePage goToCategories(String page) {
+		if(page.toLowerCase() == "women") {
+			this.getCatTitleWomen().click();
+		} else if(page.toLowerCase() == "dresses") {
+			this.getCatTitleDresses().click();
+		} else if(page.toLowerCase() == "t-shirts") {
+			this.getCatTitleDresses().click();
+		}
+		return new MyStorePage();
 	}
 }

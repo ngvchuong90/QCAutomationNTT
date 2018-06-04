@@ -1,25 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29370" started-at="2018-06-03T14:50:30Z" finished-at="2018-06-03T14:51:00Z">
+  <suite name="Default suite" duration-ms="103983" started-at="2018-06-04T15:41:52Z" finished-at="2018-06-04T15:43:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29370" started-at="2018-06-03T14:50:30Z" finished-at="2018-06-03T14:51:00Z">
-      <class name="TestSuite.testWishList">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite.testWishList@5e5792a0]" name="beforeMethod" is-config="true" duration-ms="5067" started-at="2018-06-03T14:50:30Z" finished-at="2018-06-03T14:50:36Z">
+    <test name="Default test" duration-ms="103983" started-at="2018-06-04T15:41:52Z" finished-at="2018-06-04T15:43:36Z">
+      <class name="TestSuite.testLogin">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite.testLogin@26653222]" name="beforeMethod" is-config="true" duration-ms="5150" started-at="2018-06-04T15:41:52Z" finished-at="2018-06-04T15:41:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC08()[pri:0, instance:TestSuite.testWishList@5e5792a0]" name="TC08" duration-ms="23454" started-at="2018-06-03T14:50:36Z" finished-at="2018-06-03T14:50:59Z">
+        <test-method status="PASS" signature="TC01(java.lang.String, java.lang.String)[pri:0, instance:TestSuite.testLogin@26653222]" name="TC01" duration-ms="60434" started-at="2018-06-04T15:41:58Z" data-provider="authenticationLogin" finished-at="2018-06-04T15:42:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nghiemthuthuy1912@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456a@]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC08 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite.testWishList@5e5792a0]" name="afterMethod" is-config="true" duration-ms="797" started-at="2018-06-03T14:50:59Z" finished-at="2018-06-03T14:51:00Z">
+        </test-method> <!-- TC01 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite.testLogin@26653222]" name="afterMethod" is-config="true" duration-ms="863" started-at="2018-06-04T15:42:58Z" finished-at="2018-06-04T15:42:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- TestSuite.testWishList -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite.testLogin@26653222]" name="beforeMethod" is-config="true" duration-ms="3494" started-at="2018-06-04T15:42:59Z" finished-at="2018-06-04T15:43:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSuite.testLogin@26653222]" name="TC02" duration-ms="14533" started-at="2018-06-04T15:43:02Z" data-provider="authenticationLogin" finished-at="2018-06-04T15:43:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[An email address required.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite.testLogin@26653222]" name="afterMethod" is-config="true" duration-ms="748" started-at="2018-06-04T15:43:17Z" finished-at="2018-06-04T15:43:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite.testLogin@26653222]" name="beforeMethod" is-config="true" duration-ms="3562" started-at="2018-06-04T15:43:18Z" finished-at="2018-06-04T15:43:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSuite.testLogin@26653222]" name="TC02" duration-ms="14333" started-at="2018-06-04T15:43:21Z" data-provider="authenticationLogin" finished-at="2018-06-04T15:43:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password is required.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite.testLogin@26653222]" name="afterMethod" is-config="true" duration-ms="793" started-at="2018-06-04T15:43:36Z" finished-at="2018-06-04T15:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestSuite.testLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

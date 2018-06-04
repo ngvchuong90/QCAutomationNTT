@@ -24,7 +24,7 @@ public class testLogin {
 		Constant.WEBDRIVER.manage().window().maximize();
 	}
 
-	@Test(dataProvider = "authenticationLogin", dataProviderClass=LoginData.loginData.class)
+	@Test(dataProvider = "authenticationLogin", dataProviderClass=AllData.loginData.class)
 	public void TC01(String userName, String passWord) throws InterruptedException {
 		System.out.println("TC01 - User can log into with valid username and password");
 		HomePage homePage = new HomePage();
@@ -32,7 +32,7 @@ public class testLogin {
 		assertEquals(welcome, "Welcome to your account. Here you can manage all of your personal information and orders.");
 	}
 	
-	@Test(dataProvider = "authenticationLogin", dataProviderClass=LoginData.loginData.class)
+	@Test(dataProvider = "authenticationLogin", dataProviderClass=AllData.loginData.class)
 	public void TC02(String userName, String passWord, String errorMess) throws InterruptedException {
 		System.out.println("TC02 - User can't log into with invalid username and password");
 		HomePage homePage = new HomePage();

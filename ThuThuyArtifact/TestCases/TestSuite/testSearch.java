@@ -29,7 +29,7 @@ public class testSearch {
 		System.out.println("TC06 - Search value susscessfull");
 	}
 	
-	@Test(dataProvider = "authenticationLogin", dataProviderClass=LoginData.loginData.class)
+	@Test(dataProvider = "authenticationLogin", dataProviderClass=AllData.loginData.class)
 	public void TC07(String keyWork, String errorM) {
 		System.out.println("TC07 - Search invalid value");
 		HomePage homePage = new HomePage();

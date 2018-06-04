@@ -8,6 +8,7 @@
 			<class name="TestSuite.testProductDetails" />
 			<class name="TestSuite.testSearch" />
 			<class name="TestSuite.testWishList" />
+			<class name="TestSuite.testPageDisplay" />
 		</classes>
 	</test>
 </suite>

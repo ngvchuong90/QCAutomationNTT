@@ -26,7 +26,7 @@ public class testRegister {
 		Constant.WEBDRIVER.manage().window().maximize();
 	}
 
-	@Test(dataProvider = "authenticationLogin", dataProviderClass=LoginData.loginData.class)
+	@Test(dataProvider = "authenticationLogin", dataProviderClass=AllData.loginData.class)
 	public void TC03(String firstName, String lastName, String passWord, String address, String city, String state, String postCode, String country, String mobiPhone, String allias) throws InterruptedException {
 		System.out.println("TC03 - Customer can register successfull");
 		String emailRandom = new generalActions().generateRandomEmail();
@@ -37,7 +37,7 @@ public class testRegister {
 		assertEquals(welcome, "Welcome to your account. Here you can manage all of your personal information and orders.");
 	}
 	
-	@Test(dataProvider = "authenticationLogin", dataProviderClass=LoginData.loginData.class)
+	@Test(dataProvider = "authenticationLogin", dataProviderClass=AllData.loginData.class)
 	public void TC04() {
 		System.out.println("TC04 - Register Unsuccessfull with email invalid");
 		
