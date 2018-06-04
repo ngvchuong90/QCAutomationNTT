@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Smoke" parallel="classes" thread-count="1">
+	<test name="Regression Suite 1">
+		<classes>
+			<class name="TestSuite.testLogin" />
+			<class name="TestSuite.testRegister" />
+			<class name="TestSuite.testProductDetails" />
+			<class name="TestSuite.testSearch" />
+			<class name="TestSuite.testWishList" />
+		</classes>
+	</test>
+</suite>
