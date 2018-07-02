@@ -7,15 +7,15 @@ import Constants.Constant;
 
 public class MyStorePage extends GeneralPage {
 	// LOCATORS
-	private final By categoriesMenuHoverForce = By.xpath("//li[@class='sfHoverForce']/a");
+	private final By catNameLabel = By.xpath("//span[@class='cat-name']");
 	
 	// ELEMENTS
-	public WebElement getCategoriesMenuHoverForce() {
-		return Constant.WEBDRIVER.findElement(categoriesMenuHoverForce);
+	public WebElement getCatNameLabel() {
+		return Constant.WEBDRIVER.findElement(catNameLabel);
 	}
 	
 	// METHODS
 	public String getCategoriesTitleOpen() {
-		return this.getCategoriesMenuHoverForce().getText();
+		return this.getCatNameLabel().getText();
 	}
 }

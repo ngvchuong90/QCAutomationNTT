@@ -1,32 +1,23 @@
 package AllData;
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 
 import org.testng.annotations.DataProvider;
 
 import Automation.generalActions;
+import Common.Utilities;
 
 public class loginData extends generalActions {
-
-	@DataProvider(name = "authenticationLogin")
-	public Object[][] getData(Method name) {
+	String path = Utilities.getProjectPath() + "\\DataObjects\\DataExcel\\data.xlsx";
+	
+	@DataProvider(name = "loginData")
+	public Object[][] getData(Method name) throws IOException {
 		if (name.getName().equalsIgnoreCase("TC01")) {
-			Object[][] obj = new Object[1][2];
-			obj[0][0] = "nghiemthuthuy1912@gmail.com";
-			obj[0][1] = "123456a@";
-
+			Object[][] obj = new generalActions().getDataFromFile(path, "loginSuccessfull");
 			return obj;
 		} else if (name.getName().equalsIgnoreCase("TC02")) {
-			Object[][] obj = new Object[2][3];
-
-			obj[0][0] = "";
-			obj[0][1] = "";
-			obj[0][2] = "An email address required.";
-
-			obj[1][0] = "test@gmail.com";
-			obj[1][1] = "";
-			obj[1][2] = "Password is required.";
-
+			Object[][] obj = new generalActions().getDataFromFile(path, "loginUnsuccessfull");
 			return obj;
 		} else if (name.getName().equalsIgnoreCase("TC03")) {
 			Object[][] obj = new Object[1][10];

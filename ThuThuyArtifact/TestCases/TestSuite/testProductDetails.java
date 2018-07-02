@@ -2,36 +2,58 @@ package TestSuite;
 
 import static org.testng.Assert.assertEquals;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Automation.HomePage;
-import Common.Utilities;
 import Constants.Constant;
 
-public class testProductDetails {
-	@BeforeMethod
-	public void beforeMethod() {
-		System.setProperty("webdriver.chrome.driver", Utilities.getProjectPath() + "\\Executables\\chromedriver.exe");
-		Constant.WEBDRIVER = new ChromeDriver();
-		Constant.WEBDRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Constant.WEBDRIVER.manage().window().maximize();
-	}
-	
-	@Test()
-	public void TC08() {
-		System.out.println("TC08 - Select Product Details");
+public class testProductDetails extends configNormal {
+
+	@Test(dataProvider = "productData", dataProviderClass = AllData.productData.class)
+	public void TC01(String noN, String testCase, String productName) {
+		System.out.println("TC" + noN + " - " + testCase);
 		HomePage homePage = new HomePage();
-		String productLabel = homePage.open().selectProduct("Faded Short Sleeve T-shirts").getProductHeader();
-		assertEquals(productLabel, "Faded Short Sleeve T-shirts");
+		String productLabel = homePage.open().selectProduct(productName).getProductHeader();
+		assertEquals(productLabel, productName);
 	}
 
-	@AfterMethod
-	public void afterMethod() {
-		Constant.WEBDRIVER.quit();
+	@Test(dataProvider = "productData", dataProviderClass = AllData.productData.class)
+	public void TC02(String noN, String testCase, String product, String name, String email, String mess) {
+		System.out.println("TC" + noN + " - " + testCase);
+		HomePage homePage = new HomePage();
+		String successfulMess = homePage.open().selectProduct(product).openSendToFriendDialog()
+				.sendLinkToFriend(name, email).getMessageSuccessfullAfterSendToFriend();
+		assertEquals(successfulMess, mess);
+	}
+
+	@Test(dataProvider = "productData", dataProviderClass = AllData.productData.class)
+	public void TC03(String noN, String testCase, String product, String name, String email, String mess) {
+		System.out.println("TC" + noN + " - " + testCase);
+		HomePage homePage = new HomePage();
+		String errorMess = homePage.open().selectProduct(product).openSendToFriendDialog().sendLinkToFriend(name, email)
+				.getErrorMessageAfterSendToFriend();
+		assertEquals(errorMess, mess);
+	}
+
+	@Test(dataProvider = "productData", dataProviderClass = AllData.productData.class)
+	public void TC04(String noN, String testCase, String product, String startN, String title, String comment)
+			throws InterruptedException {
+		System.out.println("TC" + noN + " - " + testCase);
+		HomePage homePage = new HomePage();
+		boolean check = homePage.open().goToLoginPage().loginSuccessfull(Constant.adminUserName, Constant.adminPassWord)
+				.goToHomePage().selectProduct(product).openReviewDialog().submitReviewProduct(startN, title, comment)
+				.getSuccessMessageLabel().isDisplayed();
+		assertEquals(check, true);
+	}
+
+	@Test(dataProvider = "productData", dataProviderClass = AllData.productData.class)
+	public void TC05(String noN, String testCase, String product, String startN, String title, String comment)
+			throws InterruptedException {
+		System.out.println("TC" + noN + " - " + testCase);
+		HomePage homePage = new HomePage();
+		boolean check = homePage.open().goToLoginPage().loginSuccessfull(Constant.adminUserName, Constant.adminPassWord)
+				.goToHomePage().selectProduct(product).openReviewDialog().submitReviewProduct(startN, title, comment)
+				.getErrorMessagelabel().isDisplayed();
+		assertEquals(check, true);
 	}
 }

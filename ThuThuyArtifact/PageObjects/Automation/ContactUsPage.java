@@ -62,5 +62,24 @@ public class ContactUsPage extends GeneralPage {
 	}
 	
 	// METHODS
+	public ContactUsPage sendAMessageNotLogin(String subject, String email, String OderRef, String txtMess) {
+		this.getSubjectHeadingSelection().sendKeys(subject);
+		this.getTxtEmailAddress().sendKeys(email);
+		this.getTxtOrderReference().sendKeys(OderRef);
+		this.getTxtMessageContent().sendKeys(txtMess);
+		this.getBtnSend().click();
+		return this;
+	}
 	
+	public String getSuccessMessage() {
+		return this.getAlertSuccessLabel().getText();
+	}
+	
+	public String getErrorMessage() {
+		return this.getErrorMessageLabel().getText();
+	}
+	
+	public String getEmailInputed() {
+		return this.getTxtEmailAddress().getAttribute("value");
+	}
 }

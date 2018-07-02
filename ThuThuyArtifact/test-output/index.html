@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\NVChuong\AppData\Local\Temp\testng-eclipse--1702596300\testng-customsuite.xml</span>
+                    <span>C:\Users\chuong.nguyen.STI2K\AppData\Local\Temp\testng-eclipse--1834560099\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC01(02, Verify user can log in with privated email domain, vtc@vtc.vn, 12345)">TC01(02, Verify user can log in with privated email domain, vtc@vtc.vn, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +116,47 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC01(nghiemthuthuy1912@gmail.com, 123456a@)">TC01(nghiemthuthuy1912@gmail.com, 123456a@)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC01(04, Verify user can log in with special char on domain account, thuy_nghiem@c.tv_vn.com, 12345)">TC01(04, Verify user can log in with special char on domain account, thuy_nghiem@c.tv_vn.com, 12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC02(test@gmail.com, , Password is required.)">TC02(test@gmail.com, , Password is required.)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC01(05, Verify user can log in with special char account, vc!xvc@vc.com, 12345)">TC01(05, Verify user can log in with special char account, vc!xvc@vc.com, 12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC02(, , An email address required.)">TC02(, , An email address required.)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC01(01, Verify user can log in with normal account, nghiemthuthuy1912@gmail.com, 123456a@)">TC01(01, Verify user can log in with normal account, nghiemthuthuy1912@gmail.com, 123456a@)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC01(03, Verify user can log in with valid gmail domain, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, !@#$%^&amp;*(...)">TC01(03, Verify user can log in with valid gmail domain, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, !@#$%^&*(...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC02(02, Verify user can&#039;t log in with invalid password, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, , Passwor...)">TC02(02, Verify user can't log in with invalid password, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, , Passwor...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC02(01, Verify user can&#039;t log in empty account, , 12345, An email address required.)">TC02(01, Verify user can't log in empty account, , 12345, An email address required.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC02(03, Verify user can&#039;t log in with invalid email format, n.gh.i.e.m.th.u.th.uy.19.12, !@#$%^&amp;*(), Inv...)">TC02(03, Verify user can't log in with invalid email format, n.gh.i.e.m.th.u.th.uy.19.12, !@#$%^&*(), Inv...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC02(04, Verify user can&#039;t log in with special SQL injection1, *, *, Invalid email address.)">TC02(04, Verify user can't log in with special SQL injection1, *, *, Invalid email address.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuite.testLogin" hash-for-method="TC02(05, Verify user can&#039;t log in with special SQL injection2, 1=1, true, Invalid email address.)">TC02(05, Verify user can't log in with special SQL injection2, 1=1, true, Invalid email address.)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,6 +171,80 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestSuite.testLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01(02, Verify user can log in with privated email domain, vtc@vtc.vn, 12345)">
+                  </a> <!-- TC01(02, Verify user can log in with privated email domain, vtc@vtc.vn, 12345) -->
+                  <span class="method-name">TC01</span>
+                  <span class="parameters">(02, Verify user can log in with privated email domain, vtc@vtc.vn, 12345)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;email&apos;]&quot;}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LGVN14329-W10&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\CHUONG~1.STI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 9460829100cfb4dd0b594f32599f6e7b
+*** Element info: {Using=xpath, value=//input[@id=&apos;email&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at Automation.LoginPage.getTxtUsername(LoginPage.java:44)
+	at Automation.LoginPage.login(LoginPage.java:145)
+	at Automation.LoginPage.loginSuccessfull(LoginPage.java:151)
+	at TestSuite.testLogin.TC01(testLogin.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -135,26 +253,74 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC01(nghiemthuthuy1912@gmail.com, 123456a@)">
-                  </a> <!-- TC01(nghiemthuthuy1912@gmail.com, 123456a@) -->
+                  <a name="TC01(04, Verify user can log in with special char on domain account, thuy_nghiem@c.tv_vn.com, 12345)">
+                  </a> <!-- TC01(04, Verify user can log in with special char on domain account, thuy_nghiem@c.tv_vn.com, 12345) -->
                   <span class="method-name">TC01</span>
-                  <span class="parameters">(nghiemthuthuy1912@gmail.com, 123456a@)</span>
+                  <span class="parameters">(04, Verify user can log in with special char on domain account, thuy_nghiem@c.tv_vn.com, 12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC02(test@gmail.com, , Password is required.)">
-                  </a> <!-- TC02(test@gmail.com, , Password is required.) -->
-                  <span class="method-name">TC02</span>
-                  <span class="parameters">(test@gmail.com, , Password is required.)</span>
+                  <a name="TC01(05, Verify user can log in with special char account, vc!xvc@vc.com, 12345)">
+                  </a> <!-- TC01(05, Verify user can log in with special char account, vc!xvc@vc.com, 12345) -->
+                  <span class="method-name">TC01</span>
+                  <span class="parameters">(05, Verify user can log in with special char account, vc!xvc@vc.com, 12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC02(, , An email address required.)">
-                  </a> <!-- TC02(, , An email address required.) -->
+                  <a name="TC01(01, Verify user can log in with normal account, nghiemthuthuy1912@gmail.com, 123456a@)">
+                  </a> <!-- TC01(01, Verify user can log in with normal account, nghiemthuthuy1912@gmail.com, 123456a@) -->
+                  <span class="method-name">TC01</span>
+                  <span class="parameters">(01, Verify user can log in with normal account, nghiemthuthuy1912@gmail.com, 123456a@)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01(03, Verify user can log in with valid gmail domain, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, !@#$%^&amp;*(...)">
+                  </a> <!-- TC01(03, Verify user can log in with valid gmail domain, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, !@#$%^&*(...) -->
+                  <span class="method-name">TC01</span>
+                  <span class="parameters">(03, Verify user can log in with valid gmail domain, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, !@#$%^&*())</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02(02, Verify user can&#039;t log in with invalid password, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, , Passwor...)">
+                  </a> <!-- TC02(02, Verify user can't log in with invalid password, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, , Passwor...) -->
                   <span class="method-name">TC02</span>
-                  <span class="parameters">(, , An email address required.)</span>
+                  <span class="parameters">(02, Verify user can't log in with invalid password, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, , Password is required.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02(01, Verify user can&#039;t log in empty account, , 12345, An email address required.)">
+                  </a> <!-- TC02(01, Verify user can't log in empty account, , 12345, An email address required.) -->
+                  <span class="method-name">TC02</span>
+                  <span class="parameters">(01, Verify user can't log in empty account, , 12345, An email address required.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02(03, Verify user can&#039;t log in with invalid email format, n.gh.i.e.m.th.u.th.uy.19.12, !@#$%^&amp;*(), Inv...)">
+                  </a> <!-- TC02(03, Verify user can't log in with invalid email format, n.gh.i.e.m.th.u.th.uy.19.12, !@#$%^&*(), Inv...) -->
+                  <span class="method-name">TC02</span>
+                  <span class="parameters">(03, Verify user can't log in with invalid email format, n.gh.i.e.m.th.u.th.uy.19.12, !@#$%^&*(), Invalid email address.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02(04, Verify user can&#039;t log in with special SQL injection1, *, *, Invalid email address.)">
+                  </a> <!-- TC02(04, Verify user can't log in with special SQL injection1, *, *, Invalid email address.) -->
+                  <span class="method-name">TC02</span>
+                  <span class="parameters">(04, Verify user can't log in with special SQL injection1, *, *, Invalid email address.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02(05, Verify user can&#039;t log in with special SQL injection2, 1=1, true, Invalid email address.)">
+                  </a> <!-- TC02(05, Verify user can't log in with special SQL injection2, 1=1, true, Invalid email address.) -->
+                  <span class="method-name">TC02</span>
+                  <span class="parameters">(05, Verify user can't log in with special SQL injection2, 1=1, true, Invalid email address.)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +328,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\NVChuong\AppData\Local\Temp\testng-eclipse--1702596300\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\chuong.nguyen.STI2K\AppData\Local\Temp\testng-eclipse--1834560099\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -211,24 +377,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC01')
 data.setCell(0, 2, 'TestSuite.testLogin')
-data.setCell(0, 3, 60434);
+data.setCell(0, 3, 21464);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC02')
+data.setCell(1, 1, 'TC01')
 data.setCell(1, 2, 'TestSuite.testLogin')
-data.setCell(1, 3, 14533);
+data.setCell(1, 3, 19061);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC02')
+data.setCell(2, 1, 'TC01')
 data.setCell(2, 2, 'TestSuite.testLogin')
-data.setCell(2, 3, 14333);
+data.setCell(2, 3, 16387);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC01')
+data.setCell(3, 2, 'TestSuite.testLogin')
+data.setCell(3, 3, 14071);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC01')
+data.setCell(4, 2, 'TestSuite.testLogin')
+data.setCell(4, 3, 13137);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC02')
+data.setCell(5, 2, 'TestSuite.testLogin')
+data.setCell(5, 3, 12501);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC02')
+data.setCell(6, 2, 'TestSuite.testLogin')
+data.setCell(6, 3, 12007);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC02')
+data.setCell(7, 2, 'TestSuite.testLogin')
+data.setCell(7, 3, 11601);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC02')
+data.setCell(8, 2, 'TestSuite.testLogin')
+data.setCell(8, 3, 11551);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC02')
+data.setCell(9, 2, 'TestSuite.testLogin')
+data.setCell(9, 3, 11153);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -260,36 +454,122 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC01(nghiemthuthuy1912@gmail.com, 123456a@)</span>
-                <span class="method-start">5150 ms</span>
+                <span class="method-name">TC01(01, Verify user can log in with normal account, nghiemthuthuy1912@gmail.com, 123456a@)</span>
+                <span class="method-start">5478 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">65587 ms</span>
+                <span class="method-name">afterMethod([TestResult name=TC01 status=SUCCESS method=testLogin.TC01(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">24541 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">66452 ms</span>
+                <span class="method-start">25285 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC02(, , An email address required.)</span>
-                <span class="method-start">69946 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC01(02, Verify user can log in with privated email domain, vtc@vtc.vn, 12345)</span>
+                <span class="method-start">29193 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">84481 ms</span>
+                <span class="method-name">afterMethod([TestResult name=TC01 status=FAILURE method=testLogin.TC01(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">50685 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">85230 ms</span>
+                <span class="method-start">55169 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC02(test@gmail.com, , Password is required.)</span>
-                <span class="method-start">88792 ms</span>
+                <span class="method-name">TC01(03, Verify user can log in with valid gmail domain, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, !@#$%^&*(...)</span>
+                <span class="method-start">58379 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">103126 ms</span>
+                <span class="method-name">afterMethod([TestResult name=TC01 status=SUCCESS method=testLogin.TC01(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">72452 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">73177 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC01(04, Verify user can log in with special char on domain account, thuy_nghiem@c.tv_vn.com, 12345)</span>
+                <span class="method-start">76870 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC01 status=SUCCESS method=testLogin.TC01(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">93258 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">93941 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC01(05, Verify user can log in with special char account, vc!xvc@vc.com, 12345)</span>
+                <span class="method-start">97893 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC01 status=SUCCESS method=testLogin.TC01(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">111031 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">112020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC02(01, Verify user can't log in empty account, , 12345, An email address required.)</span>
+                <span class="method-start">115963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC02 status=SUCCESS method=testLogin.TC02(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">127565 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">128455 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC02(02, Verify user can't log in with invalid password, n.gh.i.e.m.th.u.th.uy.19.12@gmail.com, , Passwor...)</span>
+                <span class="method-start">131985 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC02 status=SUCCESS method=testLogin.TC02(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">143994 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">144726 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC02(03, Verify user can't log in with invalid email format, n.gh.i.e.m.th.u.th.uy.19.12, !@#$%^&*(), Inv...)</span>
+                <span class="method-start">148373 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC02 status=SUCCESS method=testLogin.TC02(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">159925 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">160662 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC02(04, Verify user can't log in with special SQL injection1, *, *, Invalid email address.)</span>
+                <span class="method-start">164208 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC02 status=SUCCESS method=testLogin.TC02(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">176710 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">177382 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC02(05, Verify user can't log in with special SQL injection2, 1=1, true, Invalid email address.)</span>
+                <span class="method-start">180939 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC02 status=SUCCESS method=testLogin.TC02(java.lang.String, java.lang.String, java....)</span>
+                <span class="method-start">192093 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

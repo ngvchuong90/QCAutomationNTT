@@ -13,7 +13,8 @@ public class LoginPage extends GeneralPage{
 	private final By txtPassword = By.xpath("//input[@id='passwd']");
 	private final By BtnLogin = By.xpath("//button[@id='SubmitLogin']");
 	private final By errorMessageLabel = By.xpath("//div[@class='alert alert-danger']//li");
-
+	private final By errorMessageChildLabel = By.xpath("//div[@class='alert alert-danger']//li/b");
+	
 	// Create Account
 	private final By textEmailCreate = By.xpath("//input[@id='email_create']");
 	private final By btnSubmitCreate = By.xpath("//button[@id='SubmitCreate']");
@@ -135,6 +136,10 @@ public class LoginPage extends GeneralPage{
 		return Constant.WEBDRIVER.findElement(btnSubmitCreate);
 	}
 
+	public WebElement getErrorMessageChildLabel() {
+		return Constant.WEBDRIVER.findElement(errorMessageChildLabel);
+	}
+	
 	//// METHODS
 	public void login(String userName, String password) {
 		this.getTxtUsername().sendKeys(userName);
@@ -156,10 +161,14 @@ public class LoginPage extends GeneralPage{
 		this.login(userName, password);
 		return new LoginPage();
 	}
+	
+	public OrderPage loginWithCartPayment(String userName, String password) {
+		this.login(userName, password);
+		return new OrderPage();
+	}
 
 	public String getErrorMessage() {
-		String errorMess = this.getErrorMessageLabel().getText();
-		return errorMess;
+		return this.getErrorMessageLabel().getText();
 	}
 
 	public void selectGender(String gender) {
