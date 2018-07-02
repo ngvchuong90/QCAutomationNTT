@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite Smoke]" parallel="classes">
+  <test thread-count="1" name="Chrome Test(failed)" parallel="classes">
+    <classes>
+      <class name="TestSuite.testLogin">
+        <methods>
+          <include name="TC01"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestSuite.testLogin -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Suite Smoke] -->

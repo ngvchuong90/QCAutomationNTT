@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite Smoke3]" parallel="classes">
+  <parameter name="hubAddress" value="http://18.218.100.90:4444/wd/hub"/>
+  <test thread-count="1" name="Chrome Test(failed)" parallel="classes">
+    <classes>
+      <class name="TestSuite.testPageDisplay">
+        <methods>
+          <include name="TC02" invocation-numbers="0 1 2"/>
+          <include name="startDriver"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestSuite.testPageDisplay -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Suite Smoke3] -->
